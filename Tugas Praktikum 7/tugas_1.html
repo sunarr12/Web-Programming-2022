@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas1</title>
+    <script>
+        function kali() {
+            let input, pilih
+            input = document.getElementById("input").value
+            pilih = document.getElementById("pilihan").value
+
+            if (pilih == "pilihan2") {
+                let hasil = input * 9915
+                console.log(hasil)
+                document.getElementById("hasil").innerHTML = hasil
+            }
+
+            else if (pilih == "pilihan3") {
+                let hasil = input * 13472
+                console.log(hasil)
+                document.getElementById("hasil").innerHTML = hasil
+            }
+
+            else if (pilih == "pilihan4") {
+                let hasil = input * 847
+                console.log(hasil)
+                document.getElementById("hasil").innerHTML = hasil
+
+            }
+
+            else if (pilih == "pilihan5") {
+                let hasil = input * 120
+                console.log(hasil)
+                document.getElementById("hasil").innerHTML = hasil
+
+            }
+
+            else if (pilih == "pilihan6") {
+                let hasil = input * 15888
+                console.log(hasil)
+                document.getElementById("hasil").innerHTML = hasil
+
+            }
+
+            else if (pilih == "pilihan7") {
+                let hasil = input * 3592
+                console.log(hasil)
+                document.getElementById("hasil").innerHTML = hasil
+
+            }
+            else {
+                console.log("Tidak ada yang di pilih")
+            }
+        }
+
+    </script>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        table {
+            width: 50%;
+        }
+
+        td {
+            padding: 15px 15px 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conten">
+
+        <table align="center">
+            <thead>
+                <tr>
+                    <th>Masukkan Nilai</th>
+                    <th>valas</th>
+                    <th>Nilai Rupiah</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><input type="number" name="" id="input"></td>
+                    <td>
+                        <select name="" id="pilihan" onchange="kali()">
+                            <option value="" id="">Pilih ... </option>
+                            <option value="pilihan2">Dollar US</option>
+                            <option value="pilihan3">Dollar Singapore</option>
+                            <option value="pilihan4">Ringgit Malaysia</option>
+                            <option value="pilihan5">Yen Jepang</option>
+                            <option value="pilihan6">Euro</option>
+                            <option value="pilihan7">Riyal Arab Saudi</option>
+                        </select>
+                    </td>
+                    <td id="hasil"></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </div>
+</body>
+
+</html>

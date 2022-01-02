@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas2</title>
+    <script>
+
+        function kirim() {
+
+            let input, elemen, teks, parent
+            input = document.getElementById("menulis").value
+            elemen = document.createElement("p")
+            teks = document.createTextNode(input)
+            elemen.appendChild(teks)
+            parent = document.getElementById("isi")
+            parent.appendChild(elemen)
+
+        }
+    </script>
+</head>
+<style>
+    .box {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: rgb(211, 211, 211);
+        width: 40%;
+        border: 2px solid black;
+        height: 550px;
+        padding-left: 2px;
+    }
+
+    .isichat {
+        background-color: rgb(211, 211, 211);
+        height: 520px;
+        width: 100%;
+
+    }
+
+    .chat {
+        border: 2px solid black;
+        width: 100%;
+        margin-top: 2px;
+    }
+
+    .chat input {
+        width: 452px;
+
+    }
+
+    .chat button {
+        width: 70px;
+        height: 20px;
+    }
+</style>
+
+<body>
+
+    <div class="box">
+        <div class="isichat" id="isi"></div>
+        <div class="chat"><input type="text" id="menulis">
+            <button onclick="kirim()">Kirim</button>
+        </div>
+    </div>
+</body>
+
+</html>
