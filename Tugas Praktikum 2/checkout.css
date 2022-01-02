@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+   }
+body {
+    background-color: white;
+}
+.nav {
+    height: 80px;
+    width: 100%;
+    background-color:#CCD1D1 ;
+    margin:0;
+}
+.nav ul {
+    padding-top: 25px;
+    list-style-type: none;
+}
+.nav li {
+    
+    float: left;
+    margin: 2px;
+}
+.nav h3{
+   
+    padding-left: 30px;
+}
+
+.nav .c1 {
+    padding-left: 45px;
+}
+.nav .cari {
+    padding-left: 700px;
+}
+.nav .keranjang {
+    padding-left: 5px;
+}
+.nav .pesanan{
+    padding-left: 5px;
+   
+}
+.nav .pesanan a{
+    text-decoration: none;
+    color:black;
+}
+.kiri {
+    height: 400px;
+    float: left;
+    width: 60%;
+    padding-left: 40px;
+    margin-top: 40px;
+}
+.kiri .ceklis {
+    font-size: 60px;
+}
+ .kiri .nb {
+     padding-left: 20px;
+ }
+
+  
+
+.kiri .info h3 {
+    text-align: left;
+  
+} 
+.kiri .info th {
+    text-align: left;
+  
+} 
+.kiri .info .bk {
+    padding-left: 90px;
+  
+} 
+.kiri .info .bk1 {
+    padding-left: 90px;
+  
+} 
+
+.kiri .info {
+    width: 70%;
+  
+} 
+.kanan {
+    height: 280px;
+    width: 25%;
+    margin-right: 100px;
+    margin-top: 40px;
+    background-color:#CCD1D1 ;
+  
+    float: right;
+
+
+}
+.kanan .table {
+   margin-left: auto;
+   margin-right: auto;
+}
+.kanan .table h4 {
+  text-align: left;
+  padding-top: 20px;
+}
+.kanan .table #spasi {
+    padding-left: 50px;
+ }
+
+ .kanan .table input {
+    width: 150px;
+    border: 1px solid black;
+ }
+ .kanan .table button {
+    box-shadow: 2px 2px 2px black;
+    font-size: small;
+    
+ }
+ .kanan .table #spasi1 {
+    padding-left: 10px;
+ }
+.foot {
+    height: 90px;
+    width: 100%;
+    background-color:#CCD1D1 ;
+ margin-top: 480px;
+font-size: small;
+}
+.foot  ul {
+
+    padding-top: 25px;
+    list-style-type: none;
+}
+.foot li {
+    
+    float: left;
+    margin: 2px;
+}
+.foot h3{
+   
+    padding-left: 30px;
+}
+
+.foot .cX {
+    padding-left: 35px;
+}
+.foot .footkanan {
+    float: right;
+    padding-right: 40px;
+}
+.foot .fo {
+    padding-left: 30px;
+    font-size: 25px;
+}
+.foot .ter {
+    float: right;
+    padding-right: 40px;
+}
+.foot .ter .email {
+    height: 30px;
+  
+}
+.foot .ter .subs {
+    height: 30px;
+    width: 100px;
+  color:white;
+  border: red;
+  margin-right: 20px;
+  background-color: red;
+}
