@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<style>
+    body {
+        background-color: whitesmoke;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    .container {
+        width: 450px;
+        height: 400px;
+        background-color: white;
+        border: 2px solid black;
+        padding: 20px;
+        float: left;
+        margin: 20px 20px;
+    }
+    
+    #display {
+        display: none;
+        margin-right: 450px;
+        width: 450px;
+        height: 400px;
+        color: white;
+        background-color: black;
+        border: 2px solid blue;
+        padding: 20px;
+        float: left;
+        margin: 20px 20px;
+    }
+    
+    .form {
+        margin: 10px 15px;
+    }
+    
+    button {
+        margin-top: 15px;
+        background-color: blue;
+        height: 30px;
+        width: 85px;
+        color: white;
+    }
+    
+    input {
+        height: 28px;
+        width: 270px;
+        margin-top: 5px;
+        border: 1px solid blue;
+        padding-left: 7px;
+    }
+    
+    small {
+        color: red;
+    }
+</style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Form Validation</h1>
+        <div class="form">
+
+
+            <div>
+                <div>
+                    <label for="">Nama Pelanggan</label>
+                    <br>
+                    <input type="text" id="nama" placeholder="Nama">
+                    <small id="eror1"></small>
+                </div>
+                <div>
+                    <label for="">Email</label>
+                    <br>
+                    <input type="email" id="email" placeholder="Email">
+                    <small id="eror2"></small>
+                </div>
+            </div>
+
+            <div>
+                <label for="">Jam Keberangkatan</label>
+                <br>
+                <input type="time" id="jam" placeholder="Masukan Jam Berangkat">
+                <small id="eror3"></small>
+            </div>
+
+            <div>
+                <label for="">Tujuan Keberangkatan</label>
+                <br>
+                <input type="text" id="tujuan" placeholder="Tujuan">
+                <small id="eror4"></small>
+            </div>
+
+            <div>
+                <label for="">Jumlah Tiket</label>
+                <br>
+                <input type="text" id="jumlah" placeholder="Tiket">
+                <small id="eror5"></small>
+            </div>
+
+            <button onclick="validasi()">sumbit</button>
+
+
+
+        </div>
+    </div>
+
+    <div id="display">
+        <h1>Inputan Data</h1>
+        <table>
+            <tr>
+                <td>Nama Pelanggan</td>
+                <td>:</td>
+                <td id="hasilnama"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>:</td>
+                <td id="hasilemail"></td>
+            </tr>
+            <tr>
+                <td>Jam Keberangkatan</td>
+                <td>:</td>
+                <td id="hasiljam"></td>
+            </tr>
+            <tr>
+                <td>Tujuan Keberangkatan &nbsp;&nbsp;</td>
+                <td>:</td>
+                <td id="hasiltujuan"></td>
+            </tr>
+            <tr>
+                <td>Jumlah Tiket</td>
+                <td>:</td>
+                <td id="hasiljumlah"></td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        function validasi() {
+            let nama = document.getElementById('nama').value
+            let email = document.getElementById('email').value
+            let jam = document.getElementById('jam').value
+            let tujuan = document.getElementById('tujuan').value
+            let jumlah = document.getElementById('jumlah').value
+            let eror1 = document.getElementById('eror1')
+            let eror2 = document.getElementById('eror2')
+            let eror3 = document.getElementById('eror3')
+            let eror4 = document.getElementById('eror4')
+            let eror5 = document.getElementById('eror5')
+
+            let isinama = document.getElementById('isinama')
+            let isiemail = document.getElementById('isiemail')
+            let isijam = document.getElementById('isijam')
+            let isitujuan = document.getElementById('isitujuan')
+            let isijumlah = document.getElementById('isijumlah')
+            let atpos = email.indexOf("@");
+            let dotpos = email.lastIndexOf(".");
+
+            if (nama == '') {
+                alert('Data Tidak Valid')
+                eror1.innerHTML = 'nama required'
+            } else if (nama.length > 30) {
+                eror1.innerHTML = 'nama maksimum 30 karakter'
+            } else if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= email.length) {
+                eror2.innerHTML = 'masukan email format'
+            } else if (jam == '') {
+                eror3.innerHTML = 'jam required'
+            } else if (tujuan == '') {
+                eror4.innerHTML = 'tujuan required'
+            } else if (jumlah > 11) {
+                eror5.innerHTML = 'jumlah tiket maksimum 10'
+            } else if (jumlah == '') {
+                eror5.innerHTML = 'jumlah tiket required'
+            } else if (nama != '' && email != '' && jam != '' && tujuan != '' && jumlah != '') {
+                alert('Data Berhasil di Simpan')
+                document.getElementById('display').style.display = 'block'
+                hasilnama.innerHTML = nama
+                hasilemail.innerHTML = email
+                hasiljam.innerHTML = jam
+                hasiltujuan.innerHTML = tujuan
+                hasiljumlah.innerHTML = jumlah
+            }
+
+        }
+    </script>
+</body>
+
+</html>
