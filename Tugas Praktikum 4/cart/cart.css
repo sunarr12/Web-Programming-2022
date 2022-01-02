@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+   }
+body {
+    background-color: white;
+}
+.nav {
+    height: 80px;
+    width: 100%;
+    background-color:#CCD1D1 ;
+    margin:0;
+}
+.nav ul {
+    padding-top: 25px;
+    list-style-type: none;
+}
+.nav li {
+    
+    float: left;
+    margin: 2px;
+}
+.nav h3{
+   
+    padding-left: 30px;
+}
+
+.nav .c1 {
+    padding-left: 45px;
+}
+.nav .cari {
+    padding-left: 700px;
+}
+.nav .keranjang {
+    padding-left: 5px;
+}
+.nav .pesanan{
+    padding-left: 5px;
+   
+}
+.nav .pesanan a{
+    text-decoration: none;
+    color:black;
+}
+.kiri {
+    height: 200px;
+    width: 67%;
+    margin: 5px;
+    float: left;
+}
+
+
+.kiri .barang{
+    height: 100px;
+    width: 70%;
+    margin-left: 60px;
+    margin-top: 40px;
+    float: left;
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.kiri .barang thead {
+    background-color: #CCD1D1;
+}
+.kiri .barang tfoot {
+    background-color: #CCD1D1;
+}
+.kiri .barang .item{
+   padding-right: 65px;
+ }
+
+.kiri .barang .baju{
+    padding-top: 20px;
+}
+.kiri .barang .size{
+    padding-left: 20px;
+}
+.kiri .barang .hb{
+   padding-left: 180px;
+ }
+.kiri .barang .hbb{
+   font-weight: bold;
+   padding-left: 180px;
+}
+
+.kiri .barang .jumlah{
+   padding-left: 30px;
+ }
+.kiri .barang .jumlahb{
+   padding-left: 100px;
+}
+.kiri .barang .jumlahS{
+    padding-left: 100px;
+ }
+ .kanan {
+    height: 180px;
+    width: 20%;
+    margin-right: 100px;
+    margin-top: 40px;
+    background-color:#CCD1D1 ;
+  
+    float: right;
+
+
+}
+
+.kanan .table {
+   margin-left: auto;
+   margin-right: auto;
+}
+.kanan .table h4 {
+  text-align: left;
+  padding-top: 20px;
+}
+.kanan .table #spasi {
+    padding-left: 50px;
+ }
+ .kanan .table button {
+width: 100%;
+height: 30px;
+background-color: blue;
+color: white;
+border: black;
+ }
+ .foot {
+    height: 90px;
+    width: 100%;
+    background-color:#CCD1D1 ;
+ margin-top: 450px;
+font-size: small;
+}
+.foot  ul {
+
+    padding-top: 25px;
+    list-style-type: none;
+}
+.foot li {
+    
+    float: left;
+    margin: 2px;
+}
+.foot h3{
+   
+    padding-left: 30px;
+}
+
+.foot .cX {
+    padding-left: 35px;
+}
+.foot .footkanan {
+    float: right;
+    padding-right: 40px;
+}
+.foot .fo {
+    padding-left: 30px;
+    font-size: 25px;
+}
+.foot .ter {
+    float: right;
+    padding-right: 40px;
+}
+.foot .ter .email {
+    height: 30px;
+  
+}
+.foot .ter .subs {
+    height: 30px;
+    width: 100px;
+  color:white;
+  border: red;
+  margin-right: 20px;
+  background-color: red;
+}
